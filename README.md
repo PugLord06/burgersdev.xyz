@@ -1,73 +1,85 @@
-# React + TypeScript + Vite
+# Michael Burgers — Software Engineer Portfolio 💻⚡
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Live Demo](https://img.shields.io/badge/Live_Demo-burgersportfolio.web.app-6366f1?style=for-the-badge&logo=firebase)](https://burgersportfolio.web.app)
+[![CI/CD](https://img.shields.io/badge/CI%2FCD-Firebase_Hosting-ffca28?style=for-the-badge&logo=githubactions)](https://github.com/PugLord06/burgersdev.xyz/actions)
+[![Backend Repo](https://img.shields.io/badge/Backend_Repo-FastAPI_%2B_RAG-009688?style=for-the-badge&logo=fastapi)](https://github.com/PugLord06/burgersdev.xyz-backend)
 
-Currently, two official plugins are available:
+A high-performance, interactive **IDE-themed Developer Portfolio** built with **React**, **TypeScript**, **Tailwind CSS**, and **Vite**. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Designed to look and feel like a modern IDE, complete with file tree navigation, interactive code viewports, real-time AI Assistant chat, and an integrated ATS resume PDF engine.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+* 🎨 **VS Code IDE Aesthetic:** Interactive sidebar file explorer, breadcrumb paths, command palette UI, and theme toggling (Dark/Light mode).
+* 🤖 **RAG AI Assistant Integration:** Integrated AI chat interface with real-time SSE streaming connected to a [FastAPI & Gemini RAG Backend](https://github.com/PugLord06/burgersdev.xyz-backend).
+* 📄 **Dynamic ATS Resume Generation:** Python-powered ReportLab script (`scratch/generate_resume_pdf.py`) that outputs clean, ATS-compliant PDF resumes on demand.
+* 🚀 **Interactive Project Showcase:** Highlights flagship projects like **Isitcheatingif.com** (500+ MAU, 13% Search CTR), **LekkerFinds.co.za**, and **Anarchy Gaming**.
+* ⚡ **Automated CI/CD:** Fully automated deployments to **Firebase Hosting** via GitHub Actions on every push to `main`.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* **Frontend:** React 19, TypeScript, Vite
+* **Styling:** Tailwind CSS, Lucide React Icons
+* **PDF Engine:** Python 3, ReportLab
+* **Hosting:** Firebase Hosting (Edge CDN)
+* **CI/CD:** GitHub Actions
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 📂 Project Structure
+
+```text
+portfolio-ide/
+├── public/                 # Static assets & generated Resume PDF
+├── scratch/
+│   └── generate_resume_pdf.py # ATS PDF Resume generator script
+├── src/
+│   ├── components/         # Reusable UI components (Sidebar, Topbar, Terminal)
+│   ├── data/               # Centralized data store (Projects, Resume details)
+│   ├── hooks/              # Custom hooks (AI Chat SSE client)
+│   └── pages/              # Views (IDE View, About, Resume, Projects, AI Chat)
+├── .github/workflows/      # Automated Firebase deployment GitHub Actions
+├── firebase.json           # Firebase Hosting configuration
+└── vite.config.ts          # Vite build settings
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Local Development Setup
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/PugLord06/burgersdev.xyz.git
+   cd burgersdev.xyz
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Set Environment Variables:**
+   Create a `.env.local` file:
+   ```env
+   VITE_API_URL=http://localhost:8000
+   ```
+
+4. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+5. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+---
+
+## 📜 License
+
+MIT © [Michael Burgers](https://github.com/PugLord06)
