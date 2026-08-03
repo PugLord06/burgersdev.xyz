@@ -164,7 +164,7 @@ export default function AboutView() {
               Lekker<span className="text-[#5B21B6] font-extrabold">Finds</span>.co.za
             </h4>
             <p className="text-xs text-workspace-textMuted leading-relaxed">
-              Configured and deployed comprehensive e-commerce platforms like <strong>lekkerfinds.co.za</strong> with seamless catalog indexing and checkout workflows.
+              Edited Shopify templates using Liquid language and configured custom domain DNS setup for <strong>lekkerfinds.co.za</strong>.
             </p>
           </div>
 
@@ -217,7 +217,7 @@ export default function AboutView() {
             As the tech landscape evolves, so do my capabilities. I am deeply invested in AI and prompt engineering, actively leveraging advanced artificial intelligence to architect smarter applications, streamline complex development workflows, and design next-generation solutions. This technical focus on AI parallels my commitment to industry governance; I recently submitted formal policy feedback to the Department of Communications and Digital Technologies on the Draft South Africa National Artificial Intelligence Policy to help shape the future of tech in our country.
           </p>
           <p>
-            I am not just a developer—I am an entrepreneur and creator. I founded the independent game studio Is It Studios, publishing our flagship web-based multiplayer platform, isitcheatingif.com. My portfolio also includes engineering a Riot Games-approved Discord statistics tracker for Teamfight Tactics and configuring comprehensive e-commerce platforms like lekkerfinds.co.za.
+            I am not just a developer—I am an entrepreneur and creator. I founded the independent game studio Is It Studios, publishing our flagship web-based multiplayer platform, isitcheatingif.com. My portfolio also includes engineering a Riot Games-approved Discord statistics tracker for Teamfight Tactics and managing Shopify stores using Liquid templates and custom domain integrations like lekkerfinds.co.za.
           </p>
           <p>
             Recognized for my academic drive, I rank in the top 15% of my university cohort and am proud to be a Hollywoodbets and Hollywood Foundation bursary recipient. From attending global events like the YES Summit to building full-stack platforms from the ground up, I am on a quest to make a distinctive impact in the software engineering space. I invite collaboration and exploration—let's collectively elevate the standard of technological innovation.
