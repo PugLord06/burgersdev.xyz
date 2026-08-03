@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO Meta Tags -->
+    <title>Michael Burgers (burgersdev) | Full-Stack Software Engineer & AI Developer</title>
+    <meta name="description" content="Portfolio of Michael Burgers (burgersdev), a full-stack software engineer and AI engineer based in Cape Town, South Africa. Discover his interactive projects, code logs, and academic credentials." />
+    <meta name="keywords" content="Michael Burgers, burgersdev, Software Engineer Cape Town, React Developer, TypeScript Engineer, AI Developer, Eduvos Student, Golden Key Honor Society" />
+    <meta name="author" content="Michael Burgers" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Michael Burgers (burgersdev) | Full-Stack Software Engineer & AI Developer" />
+    <meta property="og:description" content="Portfolio of Michael Burgers (burgersdev), featuring interactive workspaces, project logs, and tools built using React, TypeScript, and the Gemini API." />
+    <meta property="og:site_name" content="burgersdev Portfolio" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Michael Burgers (burgersdev) | Full-Stack Software Engineer & AI Developer" />
+    <meta name="twitter:description" content="Portfolio of Michael Burgers (burgersdev), featuring interactive workspaces, project logs, and tools built using React, TypeScript, and the Gemini API." />
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>" />
+  </head>
+  <body>
+    <div id="root">
+      <!-- Pre-React loading state — disappears once React mounts -->
+      <style>
+        #pre-boot {
+          position: fixed; inset: 0; z-index: 200;
+          background: #0a0a0f;
+          display: flex; align-items: center; justify-content: center;
+          font-family: 'JetBrains Mono', 'Courier New', monospace;
+        }
+        #pre-boot .cursor {
+          display: inline-block; width: 8px; height: 16px;
+          background: #3b82f6; margin-left: 4px;
+          animation: blink-cursor 1s step-end infinite;
+        }
+        @keyframes blink-cursor { 50% { opacity: 0; } }
+      </style>
+      <div id="pre-boot">
+        <div style="color: #3b82f6; font-size: 13px;">
+          <span style="opacity: 0.6;">&gt;</span> Initializing burgersdev workspace<span class="cursor"></span>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

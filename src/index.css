@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light Mode */
+    --color-workspace-sidebar: #f1f5f9;
+    --color-workspace-editor: #ffffff;
+    --color-workspace-border: #e2e8f0;
+    --color-workspace-borderLight: #cbd5e1;
+    --color-workspace-accent: 59 130 246;
+    --color-workspace-accentDark: 37 99 235;
+    --color-workspace-textActive: #0f172a;
+    --color-workspace-textMuted: #64748b;
+    --color-workspace-textSecondary: #334155;
+    --color-workspace-chipBg: #f1f5f9;
+    --color-workspace-chipHover: #e2e8f0;
+    --color-workspace-pillBg: #ffffff;
+  }
+
+  .dark {
+    /* Dark Mode (Current defaults) */
+    --color-workspace-sidebar: #090d16;
+    --color-workspace-editor: #0b0f19;
+    --color-workspace-border: #1e293b;
+    --color-workspace-borderLight: #334155;
+    --color-workspace-accent: 59 130 246;
+    --color-workspace-accentDark: 37 99 235;
+    --color-workspace-textActive: #ffffff;
+    --color-workspace-textMuted: #64748b;
+    --color-workspace-textSecondary: #94a3b8;
+    --color-workspace-chipBg: #1e293b;
+    --color-workspace-chipHover: #334155;
+    --color-workspace-pillBg: #0f172a;
+  }
+
+  
+  /* ----------------- PURPLE THEME ----------------- */
+  [data-theme="purple"] {
+    --color-workspace-sidebar: #f3e8ff;
+    --color-workspace-editor: #ffffff;
+    --color-workspace-border: #d8b4fe;
+    --color-workspace-borderLight: #c084fc;
+    --color-workspace-accent: 139 92 246;
+    --color-workspace-accentDark: 124 58 237;
+    --color-workspace-chipBg: #f3e8ff;
+    --color-workspace-chipHover: #e9d5ff;
+  }
+  .dark[data-theme="purple"], [data-theme="purple"].dark {
+    --color-workspace-sidebar: #171033;
+    --color-workspace-editor: #0f0a1c;
+    --color-workspace-border: #3b2c68;
+    --color-workspace-borderLight: #5b4a8e;
+    --color-workspace-accent: 139 92 246;
+    --color-workspace-accentDark: 124 58 237;
+    --color-workspace-chipBg: #1e163b;
+    --color-workspace-chipHover: #2c2151;
+  }
+
+  /* ----------------- EMERALD THEME ----------------- */
+  [data-theme="emerald"] {
+    --color-workspace-sidebar: #d1fae5;
+    --color-workspace-editor: #ffffff;
+    --color-workspace-border: #6ee7b7;
+    --color-workspace-borderLight: #34d399;
+    --color-workspace-accent: 16 185 129;
+    --color-workspace-accentDark: 5 150 105;
+    --color-workspace-chipBg: #d1fae5;
+    --color-workspace-chipHover: #a7f3d0;
+  }
+  .dark[data-theme="emerald"], [data-theme="emerald"].dark {
+    --color-workspace-sidebar: #022c22;
+    --color-workspace-editor: #011f18;
+    --color-workspace-border: #065f46;
+    --color-workspace-borderLight: #047857;
+    --color-workspace-accent: 16 185 129;
+    --color-workspace-accentDark: 5 150 105;
+    --color-workspace-chipBg: #064e3b;
+    --color-workspace-chipHover: #065f46;
+  }
+
+  /* ----------------- AMBER THEME ----------------- */
+  [data-theme="amber"] {
+    --color-workspace-sidebar: #fef3c7;
+    --color-workspace-editor: #ffffff;
+    --color-workspace-border: #fcd34d;
+    --color-workspace-borderLight: #fbbf24;
+    --color-workspace-accent: 245 158 11;
+    --color-workspace-accentDark: 217 119 6;
+    --color-workspace-chipBg: #fef3c7;
+    --color-workspace-chipHover: #fde68a;
+  }
+  .dark[data-theme="amber"], [data-theme="amber"].dark {
+    --color-workspace-sidebar: #451a03;
+    --color-workspace-editor: #2e1102;
+    --color-workspace-border: #78350f;
+    --color-workspace-borderLight: #92400e;
+    --color-workspace-accent: 245 158 11;
+    --color-workspace-accentDark: 217 119 6;
+    --color-workspace-chipBg: #542004;
+    --color-workspace-chipHover: #78350f;
+  }
+
+  /* ----------------- ROSE THEME ----------------- */
+  [data-theme="rose"] {
+    --color-workspace-sidebar: #ffe4e6;
+    --color-workspace-editor: #ffffff;
+    --color-workspace-border: #fda4af;
+    --color-workspace-borderLight: #fb7185;
+    --color-workspace-accent: 244 63 94;
+    --color-workspace-accentDark: 225 29 72;
+    --color-workspace-chipBg: #ffe4e6;
+    --color-workspace-chipHover: #fecdd3;
+  }
+  .dark[data-theme="rose"], [data-theme="rose"].dark {
+    --color-workspace-sidebar: #4c0519;
+    --color-workspace-editor: #330311;
+    --color-workspace-border: #881337;
+    --color-workspace-borderLight: #9f1239;
+    --color-workspace-accent: 244 63 94;
+    --color-workspace-accentDark: 225 29 72;
+    --color-workspace-chipBg: #600822;
+    --color-workspace-chipHover: #881337;
+  }
+  body {
+    background-color: var(--color-workspace-editor);
+    color: var(--color-workspace-textSecondary);
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Archivo', sans-serif;
+    letter-spacing: -0.02em;
+  }
+  
+  code, pre {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+  }
+}
+
+/* Custom Scrollbars to replicate code editor look */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-workspace-sidebar);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-workspace-border);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-workspace-borderLight);
+}
+
+/* Typewriter typing animation */
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.cursor-blink {
+  border-right: 2px solid #3b82f6;
+  animation: blink 0.75s step-end infinite;
+}
+
+/* Custom glow effect */
+.blue-glow {
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.15);
+}
+
+/* Glassmorphism settings panel */
+.glass-panel {
+  background: var(--color-workspace-sidebar);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--color-workspace-border);
+}
+
+/* Print CSS adjustments */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  #sidebar-navigation, #window-titlebar, #chat-control-dock, #breadcrumb-navigation {
+    display: none !important;
+  }
+}
