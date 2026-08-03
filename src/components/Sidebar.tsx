@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { 
   Plus, MessageSquare, Calendar, ChevronDown, ChevronRight, 
-  Folder, FolderOpen, Settings, Bot, User 
+  Folder, FolderOpen, Settings, Bot, User, Zap 
 } from 'lucide-react';
 import { PROJECT_LOGS } from '../data/developerData';
 import SidebarItem from './SidebarItem';
@@ -78,12 +78,18 @@ export default function Sidebar({
             <Link 
               to="/ai-chat"
               onClick={onCloseMobile}
-              className={`w-full flex items-center gap-2 px-3 py-2 text-xs font-semibold rounded-lg transition-colors ${
+              className={`w-full flex items-center justify-between px-3 py-2 text-xs font-semibold rounded-lg transition-colors ${
                 activeLogId === 'ai-chat' ? 'text-workspace-textActive bg-workspace-chipHover border border-workspace-border' : 'text-workspace-textSecondary hover:text-workspace-textActive hover:bg-workspace-chipBg/50'
               }`}
             >
-              <Bot className={`w-4 h-4 ${activeLogId === 'ai-chat' ? 'text-workspace-accent' : 'text-workspace-textMuted'}`} />
-              <span>AI Assistant</span>
+              <div className="flex items-center gap-2">
+                <Bot className={`w-4 h-4 ${activeLogId === 'ai-chat' ? 'text-workspace-accent' : 'text-workspace-textMuted'}`} />
+                <span>AI Assistant</span>
+              </div>
+              <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-[9px] font-mono font-bold bg-amber-500/15 text-amber-400 border border-amber-500/40">
+                <Zap className="w-2.5 h-2.5 fill-amber-400 text-amber-400" />
+                WIP
+              </span>
             </Link>
             <button className="w-full flex items-center gap-2 px-3 py-2 text-xs font-semibold text-workspace-textSecondary hover:text-workspace-textActive transition-colors">
               <MessageSquare className="w-4 h-4 text-workspace-textMuted" />

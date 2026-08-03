@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Bot, User } from 'lucide-react';
+import { Bot, User, Zap } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 
 export interface ChatMessage {
@@ -26,8 +26,12 @@ export default function AIChatView({ chatHistory, isTyping }: AIChatViewProps) {
     <div className="flex flex-col h-full bg-workspace-editor overflow-hidden animate-fadeIn">
       {/* Header */}
       <div className="border-b border-workspace-border p-4 shrink-0 bg-[#0e0e11]/80 backdrop-blur-md sticky top-0 z-10">
-        <h1 className="text-xl font-bold text-white flex items-center gap-2 tracking-tight">
+        <h1 className="text-xl font-bold text-white flex items-center gap-3 tracking-tight">
           <Bot className="w-6 h-6 text-blue-400" /> Assistant
+          <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold bg-amber-500/15 text-amber-400 border border-amber-500/40 shadow-[0_0_12px_rgba(245,158,11,0.25)]">
+            <Zap className="w-3 h-3 fill-amber-400 text-amber-400 animate-pulse" />
+            EXPERIMENTAL (WIP)
+          </span>
         </h1>
         <p className="text-xs text-workspace-textSecondary mt-1">
           Ask me anything about Michael's experience, tech stack, or projects.
