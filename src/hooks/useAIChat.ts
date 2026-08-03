@@ -12,7 +12,6 @@ export function useAIChat() {
     
     setAiTyping(true);
     navigate('/ai-chat');
-    setChatHistory(prev => [...prev, { role: 'user', content: message }]);
 
     const msgLower = message.toLowerCase();
     let redirectPath = "";
@@ -27,7 +26,12 @@ export function useAIChat() {
       redirectPath = "/project/conv-academic";
     }
 
-    setChatHistory(prev => [...prev, { role: 'assistant', content: '' }]);
+    // Add both user message and empty assistant message together atomically
+    setChatHistory(prev => [
+      ...prev,
+      { role: 'user', content: message },
+      { role: 'assistant', content: '' }
+    ]);
 
     try {
       const apiUrl = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
@@ -59,13 +63,22 @@ export function useAIChat() {
             try {
               const dataJson = JSON.parse(dataStr);
               const content = dataJson.content || '';
+              
               setChatHistory(prev => {
                 const newHistory = [...prev];
-                const lastIdx = newHistory.length - 1;
-                newHistory[lastIdx] = {
-                  ...newHistory[lastIdx],
-                  content: newHistory[lastIdx].content + content
-                };
+                let assistantIdx = -1;
+                for (let i = newHistory.length - 1; i >= 0; i--) {
+                  if (newHistory[i].role === 'assistant') {
+                    assistantIdx = i;
+                    break;
+                  }
+                }
+                if (assistantIdx !== -1) {
+                  newHistory[assistantIdx] = {
+                    ...newHistory[assistantIdx],
+                    content: newHistory[assistantIdx].content + content
+                  };
+                }
                 return newHistory;
               });
             } catch (e) {
@@ -80,10 +93,16 @@ export function useAIChat() {
       
       setChatHistory(prev => {
         const newHistory = [...prev];
-        const lastIdx = newHistory.length - 1;
-        if (lastIdx >= 0 && newHistory[lastIdx].role === 'assistant') {
-          newHistory[lastIdx] = {
-            ...newHistory[lastIdx],
+        let assistantIdx = -1;
+        for (let i = newHistory.length - 1; i >= 0; i--) {
+          if (newHistory[i].role === 'assistant') {
+            assistantIdx = i;
+            break;
+          }
+        }
+        if (assistantIdx !== -1) {
+          newHistory[assistantIdx] = {
+            ...newHistory[assistantIdx],
             content: offlineMsg
           };
         }
