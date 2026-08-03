@@ -7,7 +7,6 @@ import ChatBar from './components/ChatBar';
 import BootScreen from './components/BootScreen';
 import { useAIChat } from './hooks/useAIChat';
 import { PROJECT_LOGS } from './data/developerData';
-import { PixelBlastBackground } from './components/PixelBlastBackground';
 
 export default function App() {
   const [isBooted, setIsBooted] = useState(() => {
@@ -93,12 +92,6 @@ export default function App() {
         }} />
       )}
       <div id="app-workspace-root" className={`h-screen w-screen bg-workspace-editor text-workspace-textSecondary flex flex-col font-sans overflow-hidden select-none transition-opacity duration-500 ${isBooted ? 'opacity-100' : 'opacity-0'}`}>
-        <PixelBlastBackground 
-          color={isDarkMode ? '#8b5cf6' : '#6366f1'} 
-          speed={0.2} 
-          rippleIntensity={1.0} 
-          pixelSize={3} 
-        />
         <WindowTitlebar 
           activePath={activePathLabel} 
           isDarkMode={isDarkMode}

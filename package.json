@@ -12,13 +12,11 @@
   "dependencies": {
     "@calcom/embed-react": "^1.5.3",
     "@tailwindcss/typography": "^0.5.20",
-    "@types/three": "^0.185.3",
     "lucide-react": "^1.17.0",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "react-markdown": "^10.1.0",
-    "react-router-dom": "^7.18.1",
-    "three": "^0.185.1"
+    "react-router-dom": "^7.18.1"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
