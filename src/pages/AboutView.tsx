@@ -138,7 +138,7 @@ export default function AboutView() {
             </div>
             <h4 className="text-sm font-bold text-workspace-textActive">isitcheatingif.com</h4>
             <p className="text-xs text-workspace-textMuted leading-relaxed">
-              Founded independent studio Is It Studios and published flagship viral procedural debate platform serving <strong>500+ monthly active users</strong>.
+              Founded independent studio Is It Studios and published flagship viral procedural debate platform serving <strong>500+ monthly active users</strong>. Maintained a <strong>13% Search CTR</strong> through advanced technical SEO.
             </p>
           </div>
 

@@ -127,6 +127,7 @@ def generate_ats_resume(output_path):
     story.append(Paragraph("<b>isitcheatingif.com — Flagship Web Platform</b> &nbsp;&nbsp;|&nbsp;&nbsp; <i>Is It Studios &nbsp;|&nbsp; React, Next.js, TypeScript, TailwindCSS</i>", bold_label_style))
     story.append(Paragraph("• Founded independent studio Is It Studios and published viral procedural debate platform serving <b>500+ monthly active users</b>.", bullet_style))
     story.append(Paragraph("• Implemented interactive dilemma evaluation logic, real-time vote distribution analytics, and dynamic UI reveal animations.", bullet_style))
+    story.append(Paragraph("• Executed advanced SEO strategies to drive organic traffic, maintaining a high 13% Click-Through Rate (CTR) since launch.", bullet_style))
     story.append(Paragraph("• Resolved Next.js SSR hydration state mismatches and optimized structural layout guidelines for Google AdSense approval.", bullet_style))
     story.append(Spacer(1, 4))
 
