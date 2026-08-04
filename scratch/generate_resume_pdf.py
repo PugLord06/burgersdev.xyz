@@ -105,7 +105,7 @@ def generate_ats_resume(output_path):
       "Disciplined, performance-driven 20-year-old South African Software Engineer and 3rd-year BScIT student at Eduvos (Top 15% academic standing, "
       "Hollywoodbets &amp; Hollywood Foundation Bursary Recipient). Founder of independent game studio Is It Studios and published creator of isitcheatingif.com "
       "(500+ monthly active users). Experienced in full-stack React/Next.js/TypeScript architectures, enterprise Java (Spring Boot, JWT), Python AI integrations, "
-      "and cloud infrastructure (GCP, Oracle Cloud OCI, Railway, Render). Contributor of formal policy feedback on the Draft South Africa National Artificial Intelligence Policy."
+      "and cloud infrastructure (GCP, Oracle Cloud OCI, Netlify). Contributor of formal policy feedback on the Draft South Africa National Artificial Intelligence Policy."
     )
     story.append(Paragraph(summary_text, body_style))
     story.append(Spacer(1, 6))
