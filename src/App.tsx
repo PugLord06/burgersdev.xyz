@@ -91,7 +91,7 @@ export default function App() {
           setIsBooted(true);
         }} />
       )}
-      <div id="app-workspace-root" className={`h-screen w-screen bg-workspace-editor text-workspace-textSecondary flex flex-col font-sans overflow-hidden select-none transition-opacity duration-500 ${isBooted ? 'opacity-100' : 'opacity-0'}`}>
+      <div id="app-workspace-root" className={`h-screen w-screen bg-workspace-editor text-workspace-textSecondary flex flex-col font-sans overflow-hidden transition-opacity duration-500 ${isBooted ? 'opacity-100' : 'opacity-0'}`}>
         <WindowTitlebar 
           activePath={activePathLabel} 
           isDarkMode={isDarkMode}
