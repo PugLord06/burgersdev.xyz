@@ -95,7 +95,7 @@ def generate_ats_resume(output_path):
     story.append(Paragraph("MICHAEL BURGERS", name_style))
     story.append(Paragraph("Full-Stack Software Engineer &amp; AI Developer", title_style))
     story.append(Spacer(1, 4))
-    story.append(Paragraph("Cape Town, South Africa &nbsp;|&nbsp; michaelburgers06@gmail.com &nbsp;|&nbsp; github.com/PugLord06", contact_style))
+    story.append(Paragraph("Cape Town, South Africa &nbsp;|&nbsp; michaelburgers06@gmail.com &nbsp;|&nbsp; github.com/PugLord06 &nbsp;|&nbsp; linkedin.com/in/michaelburgers", contact_style))
     story.append(Spacer(1, 8))
     story.append(HRFlowable(width="100%", thickness=1, color=colors.HexColor('#CBD5E1'), spaceAfter=8))
 
@@ -115,7 +115,7 @@ def generate_ats_resume(output_path):
     story.append(Paragraph("<b>Languages:</b> Java, TypeScript, JavaScript, Python, PHP, Kotlin, SQL (MySQL, SQLite), Shell/Bash, HTML5, CSS3/Sass, MATLAB", bullet_style))
     story.append(Paragraph("<b>Frontend &amp; Mobile:</b> React, Next.js, React Native (Cross-platform Mobile), Tailwind CSS, Vite, Webpack", bullet_style))
     story.append(Paragraph("<b>Backend &amp; Security:</b> Spring Boot, Spring Security (JWT), Node.js, Express, FastAPI, REST API Architecture, WebSockets", bullet_style))
-    story.append(Paragraph("<b>Cloud &amp; Infrastructure:</b> Google Cloud (GCP - Expert), Oracle Cloud (OCI - VM Setup, Port Ingress, VCN Routing), Vercel, Railway, Render, Docker", bullet_style))
+    story.append(Paragraph("<b>Cloud &amp; Infrastructure:</b> Google Cloud (GCP - Expert), Oracle Cloud (OCI - VM Setup, Port Ingress, VCN Routing), Vercel, Netlify, Docker", bullet_style))
     story.append(Paragraph("<b>Databases &amp; Storage:</b> MySQL, SQLite, MongoDB (NoSQL), Firebase, Domain &amp; DNS Management (A, CNAME, TXT, SSL)", bullet_style))
     story.append(Paragraph("<b>Software Engineering &amp; Testing:</b> OOP, Design Patterns, SOLID Principles, Data Structures &amp; Algorithms, Git/GitHub, CI/CD, JUnit, Jest, Vitest, Postman", bullet_style))
     story.append(Spacer(1, 6))
@@ -164,6 +164,8 @@ def generate_ats_resume(output_path):
     story.append(Paragraph("• <b>Global Delegations:</b> Delegate at youth leadership events including the YES Summit.", bullet_style))
     story.append(Spacer(1, 4))
     story.append(Paragraph("<b>Matriculation (IEB/National Senior Certificate)</b> &nbsp;&nbsp;|&nbsp;&nbsp; <i>De La Salle Holy Cross College High School</i> (Class of 2023)", bold_label_style))
+    story.append(Spacer(1, 4))
+    story.append(Paragraph("<b>Google AI Professional Certificate</b> &nbsp;&nbsp;|&nbsp;&nbsp; <i>Coursera (Google)</i> (Completed Feb 26, 2026)", bold_label_style))
 
     # Build Document
     doc.build(story)

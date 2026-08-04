@@ -1,4 +1,4 @@
-import { Mail, MapPin, Award, Briefcase, FileCode, Printer, Download, ChevronRight, Globe } from 'lucide-react';
+import { Mail, MapPin, Award, Briefcase, FileCode, Printer, Download, ChevronRight, Globe, Linkedin } from 'lucide-react';
 import { DEVELOPER_PROFILE } from '../data/developerData';
 import ResumeProjects from '../components/ResumeProjects';
 
@@ -100,6 +100,12 @@ export default function ResumeView() {
                 {DEVELOPER_PROFILE.portfolio}
               </a>
             </div>
+            <div className="flex items-center gap-3">
+              <Linkedin className="w-4 h-4 text-workspace-accent print:text-black" /> 
+              <a href="https://linkedin.com/in/michaelburgers" target="_blank" rel="noreferrer" className="hover:text-workspace-textActive transition-colors underline decoration-workspace-border underline-offset-4">
+                linkedin.com/in/michaelburgers
+              </a>
+            </div>
           </div>
         </div>
 
@@ -147,6 +153,16 @@ export default function ResumeView() {
                   <span className="text-xs font-mono text-purple-400 bg-purple-500/10 px-2 py-1 rounded inline-block mb-2">Class of 2023</span>
                 </div>
               </div>
+
+              <div className="bg-gradient-to-br from-workspace-editor/80 to-purple-900/10 hover:to-purple-900/20 border border-workspace-border hover:border-purple-500/30 p-5 rounded-xl print:border-black/10 print:bg-transparent space-y-3 transition-colors duration-300">
+                <div className="space-y-1">
+                  <h4 className="text-sm font-bold text-workspace-textActive print:text-black">Google AI Professional Certificate</h4>
+                  <p className="text-xs text-workspace-textSecondary print:text-black/80">Coursera (Google)</p>
+                </div>
+                <div className="pt-2 border-t border-workspace-border/50">
+                  <span className="text-xs font-mono text-purple-400 bg-purple-500/10 px-2 py-1 rounded inline-block mb-2">Completed Feb 26, 2026</span>
+                </div>
+              </div>
             </div>
 
             {/* Skills summary */}
@@ -169,7 +185,7 @@ export default function ResumeView() {
                 </div>
                 <div className="p-4 bg-workspace-editor/30 hover:bg-workspace-editor/80 border border-workspace-border hover:border-emerald-500/30 rounded-xl transition-colors duration-300 group/skill cursor-default">
                   <div className="font-bold text-workspace-textActive print:text-black mb-1 group-hover/skill:text-emerald-400 transition-colors">Cloud & Infrastructure</div>
-                  <div className="text-workspace-textSecondary print:text-black/80 font-mono text-xs">Google Cloud Platform (GCP - Expert), Oracle Cloud (OCI - VM Setup, Port Security, Network Routes), Domain & DNS Management (A, CNAME, TXT Records, SSL), Docker, Vercel, Render, Linux Admin</div>
+                  <div className="text-workspace-textSecondary print:text-black/80 font-mono text-xs">Google Cloud Platform (GCP - Expert), Oracle Cloud (OCI - VM Setup, Port Security, Network Routes), Domain & DNS Management (A, CNAME, TXT Records, SSL), Docker, Vercel, Netlify, Linux Admin</div>
                 </div>
                 <div className="p-4 bg-workspace-editor/30 hover:bg-workspace-editor/80 border border-workspace-border hover:border-emerald-500/30 rounded-xl transition-colors duration-300 group/skill cursor-default">
                   <div className="font-bold text-workspace-textActive print:text-black mb-1 group-hover/skill:text-emerald-400 transition-colors">Databases & Storage</div>
