@@ -24,7 +24,9 @@ export const DEVELOPER_PROFILE = {
   email: "michaelburgers06@gmail.com",
   studio: "Is It Studios (isitstudios.com)",
   flagship: "isitcheatingif.com",
-  ecommerce: "lekkerfinds.co.za"
+  ecommerce: "lekkerfinds.co.za",
+  portfolio: "burgersdev.xyz",
+  portfolioUrl: "https://burgersdev.xyz"
 };
 
 export const PROJECT_LOGS: Record<string, ProjectLog> = {

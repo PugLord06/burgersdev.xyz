@@ -1,4 +1,4 @@
-import { Mail, MapPin, Award, Briefcase, FileCode, Printer, Download, ChevronRight } from 'lucide-react';
+import { Mail, MapPin, Award, Briefcase, FileCode, Printer, Download, ChevronRight, Globe } from 'lucide-react';
 import { DEVELOPER_PROFILE } from '../data/developerData';
 import ResumeProjects from '../components/ResumeProjects';
 
@@ -10,7 +10,14 @@ const GithubIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 export default function ResumeView() {
   const handlePrint = () => {
-    window.print();
+    const iframe = document.createElement('iframe');
+    iframe.style.visibility = 'hidden';
+    iframe.src = '/Michael_Burgers_Resume.pdf';
+    document.body.appendChild(iframe);
+    iframe.onload = () => {
+      iframe.contentWindow?.focus();
+      iframe.contentWindow?.print();
+    };
   };
 
   return (
@@ -87,6 +94,12 @@ export default function ResumeView() {
                 github.com/{DEVELOPER_PROFILE.github}
               </a>
             </div>
+            <div className="flex items-center gap-3">
+              <Globe className="w-4 h-4 text-workspace-accent print:text-black" /> 
+              <a href={DEVELOPER_PROFILE.portfolioUrl} target="_blank" rel="noreferrer" className="hover:text-workspace-textActive transition-colors underline decoration-workspace-border underline-offset-4">
+                {DEVELOPER_PROFILE.portfolio}
+              </a>
+            </div>
           </div>
         </div>
 
@@ -107,7 +120,7 @@ export default function ResumeView() {
           <div className="lg:col-span-4 space-y-8">
             
             {/* Academic standing */}
-            <div className="space-y-4 print:break-before-page">
+            <div className="space-y-4">
               <h3 className="text-lg font-bold text-workspace-textActive print:text-black uppercase tracking-wider flex items-center gap-2">
                 <Award className="w-5 h-5 text-purple-400" /> Education
               </h3>
