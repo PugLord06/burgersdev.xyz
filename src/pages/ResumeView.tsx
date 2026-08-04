@@ -157,7 +157,7 @@ export default function ResumeView() {
               <div className="grid grid-cols-1 gap-3 text-sm">
                 <div className="p-4 bg-workspace-editor/30 hover:bg-workspace-editor/80 border border-workspace-border hover:border-emerald-500/30 rounded-xl transition-colors duration-300 group/skill cursor-default">
                   <div className="font-bold text-workspace-textActive print:text-black mb-1 group-hover/skill:text-emerald-400 transition-colors">Languages</div>
-                  <div className="text-workspace-textSecondary print:text-black/80 font-mono text-xs">Java, TypeScript, JavaScript, Python, PHP, Kotlin, SQL (MySQL, Postgres, Oracle PL/SQL), Bash, HTML5, CSS3/Sass, MATLAB, R</div>
+                  <div className="text-workspace-textSecondary print:text-black/80 font-mono text-xs">Java, TypeScript, JavaScript, Python, PHP, Kotlin, SQL (MySQL, Postgres, Oracle PL/SQL), Bash, HTML5, CSS3/Sass, MATLAB</div>
                 </div>
                 <div className="p-4 bg-workspace-editor/30 hover:bg-workspace-editor/80 border border-workspace-border hover:border-emerald-500/30 rounded-xl transition-colors duration-300 group/skill cursor-default">
                   <div className="font-bold text-workspace-textActive print:text-black mb-1 group-hover/skill:text-emerald-400 transition-colors">Frontend & Mobile</div>

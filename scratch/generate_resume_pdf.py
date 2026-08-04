@@ -112,7 +112,7 @@ def generate_ats_resume(output_path):
 
     # Technical Skills Section
     story.append(Paragraph("TECHNICAL SKILLS", heading_style))
-    story.append(Paragraph("<b>Languages:</b> Java, TypeScript, JavaScript, Python, PHP, Kotlin, SQL (MySQL, SQLite), Shell/Bash, HTML5, CSS3/Sass, MATLAB, R", bullet_style))
+    story.append(Paragraph("<b>Languages:</b> Java, TypeScript, JavaScript, Python, PHP, Kotlin, SQL (MySQL, SQLite), Shell/Bash, HTML5, CSS3/Sass, MATLAB", bullet_style))
     story.append(Paragraph("<b>Frontend &amp; Mobile:</b> React, Next.js, React Native (Cross-platform Mobile), Tailwind CSS, Vite, Webpack", bullet_style))
     story.append(Paragraph("<b>Backend &amp; Security:</b> Spring Boot, Spring Security (JWT), Node.js, Express, FastAPI, REST API Architecture, WebSockets", bullet_style))
     story.append(Paragraph("<b>Cloud &amp; Infrastructure:</b> Google Cloud (GCP - Expert), Oracle Cloud (OCI - VM Setup, Port Ingress, VCN Routing), Vercel, Railway, Render, Docker", bullet_style))
