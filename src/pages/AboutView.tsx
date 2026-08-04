@@ -61,7 +61,7 @@ export default function AboutView() {
           <Flame className="w-5 h-5 text-amber-400" /> The Journey &amp; Milestones
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4">
           {/* Milestone 1: Age 9 & 10 */}
           <div className="bg-workspace-sidebar/80 border border-workspace-border hover:border-blue-500/40 p-5 rounded-2xl space-y-3 transition-colors shadow-sm relative group">
             <div className="flex justify-between items-center">
@@ -128,7 +128,7 @@ export default function AboutView() {
           <Rocket className="w-5 h-5 text-workspace-accent" /> Creator &amp; Entrepreneur Ventures
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4">
           
           {/* Venture 1: Is It Studios & isitcheatingif.com */}
           <div className="p-5 bg-workspace-sidebar border border-workspace-border hover:border-workspace-accent/40 rounded-2xl space-y-3 transition-colors">
@@ -177,7 +177,7 @@ export default function AboutView() {
           <Award className="w-5 h-5 text-purple-400" /> Academic Recognition &amp; Bursary Awards
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div className="p-4 bg-workspace-editor/50 border border-workspace-border rounded-xl space-y-2">
             <div className="flex items-center gap-2">
               <span className="text-base">🏆</span>

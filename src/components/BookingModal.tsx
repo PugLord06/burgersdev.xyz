@@ -38,7 +38,7 @@ export default function BookingModal({ isOpen, onClose, selectedDate, onBookingC
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 animate-fadeIn">
-      <div className="bg-workspace-editor border border-workspace-border rounded-xl shadow-2xl w-full max-w-4xl max-h-[90vh] flex flex-col overflow-hidden">
+      <div className="bg-workspace-editor border border-workspace-border rounded-xl shadow-2xl w-[95vw] max-w-6xl h-[90vh] max-h-[900px] flex flex-col overflow-hidden">
         <div className="flex items-center justify-between p-4 border-b border-workspace-border bg-workspace-sidebar">
           <div className="flex items-center gap-2">
             <Video className="w-5 h-5 text-workspace-accent" />

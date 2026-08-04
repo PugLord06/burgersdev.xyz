@@ -42,7 +42,7 @@ export default function NotFoundView() {
           Suggested Navigation Targets
         </h3>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-3">
           <Link
             to="/settings"
             className="p-4 bg-workspace-sidebar border border-workspace-border hover:border-workspace-accent rounded-xl text-left transition-all group flex flex-col justify-between gap-3"
