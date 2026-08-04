@@ -30,3 +30,6 @@ scratch/
 .env
 
 .firebase/
+
+# Antigravity / Gemini artifacts
+skills-lock.json
