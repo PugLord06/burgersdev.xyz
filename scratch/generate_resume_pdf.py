@@ -145,7 +145,7 @@ def generate_ats_resume(output_path):
 
     # Project 4: LekkerFinds.co.za
     story.append(Paragraph("<b>lekkerfinds.co.za — E-Commerce Platform</b> &nbsp;&nbsp;|&nbsp;&nbsp; <i>Shopify &nbsp;|&nbsp; Liquid &nbsp;|&nbsp; Domain Setup</i>", bold_label_style))
-    story.append(Paragraph("• Edited Shopify templates using Liquid language to match brand requirements and configured custom domain DNS setup.", bullet_style))
+    story.append(Paragraph("• Developed custom Shopify templates from scratch using Liquid language and configured custom domain DNS setup.", bullet_style))
     story.append(Spacer(1, 6))
 
     # Project 5: burgersdev.xyz Portfolio
