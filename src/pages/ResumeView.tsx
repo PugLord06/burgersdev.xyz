@@ -137,6 +137,16 @@ export default function ResumeView() {
                   </p>
                 </div>
               </div>
+
+              <div className="bg-gradient-to-br from-workspace-editor/80 to-purple-900/10 hover:to-purple-900/20 border border-workspace-border hover:border-purple-500/30 p-5 rounded-xl print:border-black/10 print:bg-transparent space-y-3 transition-colors duration-300">
+                <div className="space-y-1">
+                  <h4 className="text-sm font-bold text-workspace-textActive print:text-black">Matriculation (IEB/National Senior Certificate)</h4>
+                  <p className="text-xs text-workspace-textSecondary print:text-black/80">De La Salle Holy Cross College High School</p>
+                </div>
+                <div className="pt-2 border-t border-workspace-border/50">
+                  <span className="text-xs font-mono text-purple-400 bg-purple-500/10 px-2 py-1 rounded inline-block mb-2">Class of 2023</span>
+                </div>
+              </div>
             </div>
 
             {/* Skills summary */}

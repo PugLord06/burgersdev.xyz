@@ -148,8 +148,13 @@ def generate_ats_resume(output_path):
     story.append(Paragraph("• Edited Shopify templates using Liquid language to match brand requirements and configured custom domain DNS setup.", bullet_style))
     story.append(Spacer(1, 6))
 
+    # Project 5: burgersdev.xyz Portfolio
+    story.append(Paragraph("<b>burgersdev.xyz — Interactive Developer Portfolio</b> &nbsp;&nbsp;|&nbsp;&nbsp; <i>React, Vite, Python, FastAPI, Gemini AI</i>", bold_label_style))
+    story.append(Paragraph("• Engineered a high-performance, interactive developer portfolio showcasing full-stack capabilities and modern web design.", bullet_style))
+    story.append(Paragraph("• Integrated a real-time AI Assistant chat powered by a custom Python FastAPI &amp; Google Gemini RAG backend using Server-Sent Events (SSE).", bullet_style))
+    story.append(Spacer(1, 6))
+
     # Education & Credentials Section
-    story.append(PageBreak())
     story.append(Paragraph("EDUCATION, HONOURS &amp; GOVERNANCE", heading_style))
     story.append(Paragraph("<b>Bachelor of Science in Information Technology (Software Engineering Specialization)</b> &nbsp;&nbsp;|&nbsp;&nbsp; <i>Eduvos Cape Town Campus</i> (2024 – 2026)", bold_label_style))
     story.append(Paragraph("• <b>Academic Distinction:</b> Maintained top 15% academic standing globally across university cohort.", bullet_style))
@@ -157,6 +162,8 @@ def generate_ats_resume(output_path):
     story.append(Paragraph("• <b>Golden Key International Honour Society:</b> Invited member (Top 15% academic tier).", bullet_style))
     story.append(Paragraph("• <b>National AI Policy Governance:</b> Contributed formal policy feedback to the Department of Communications and Digital Technologies (DCDT) on the Draft South Africa National Artificial Intelligence Policy.", bullet_style))
     story.append(Paragraph("• <b>Global Delegations:</b> Delegate at youth leadership events including the YES Summit.", bullet_style))
+    story.append(Spacer(1, 4))
+    story.append(Paragraph("<b>Matriculation (IEB/National Senior Certificate)</b> &nbsp;&nbsp;|&nbsp;&nbsp; <i>De La Salle Holy Cross College High School</i> (Class of 2023)", bold_label_style))
 
     # Build Document
     doc.build(story)
